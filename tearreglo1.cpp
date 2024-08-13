@@ -40,6 +40,7 @@ int main(){
 			cin>>c;
 			switch(c){
 				case 1:
+					system("cls");
 					return main();
 					break;
 			}
@@ -70,8 +71,19 @@ int main(){
 					sexcelente= sexcelente+montomen[j];
 				}
 			}
+			
 			psexcelente= (sexcelente*100)/s;
 			cout<<psexcelente<<"%";
+			cout<<" "<<endl;
+			cout<<"Menu secundario."<<endl;
+			cout<<"1. Salir";
+			cin>>c;
+			switch(c){
+				case 1:
+					system("cls");
+					return main();
+					break;
+			}
 			break;
 		case 3: 
 			cout<<"Nombres de los meses en los cuales las ventas fueron excelentes. "<<endl;
@@ -80,6 +92,16 @@ int main(){
 					sexcelente= sexcelente+montomen[j];
 				cout<<" - "<<mes[j]<<endl;
 				}
+			}
+			cout<<" "<<endl;
+			cout<<"Menu secundario."<<endl;
+			cout<<"1. Salir";
+			cin>>c;
+			switch(c){
+				case 1:
+					system("cls");
+					return main();
+					break;
 			}
 			
 	}
