@@ -17,15 +17,19 @@ int main(){
 	}
 	int promedio= s/12;
 	int menu;
+	cout<<"MENU."<<endl;
+	cout<<"Ingrese el valor que quiera"<<endl;
 	cout<<"1. Valor de la venta mensual promedio. "<<endl;
-	cout<<"2. Obtenga el porcentaje de los mese del año que cumplieron los niveles. "
-	cout<<" "<<endl;
+	cout<<"2. Obtenga el porcentaje de los meses del anio que cumplieron los niveles. "<<endl;
+	cout<<" ";
 	cin>>menu;
+	system ("cls");
 	switch(menu){
 		case 1:
 			cout<<"El promedio de la venta mensual alrededor del año es de : "<<promedio<<endl;
 			cout<<" "<<endl;
-			cout<<"Salir";
+			cout<<"Menu secundario."<<endl;
+			cout<<"1. Salir";
 			cin>>c;
 			switch(c){
 				case 1:
