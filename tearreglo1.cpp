@@ -5,6 +5,7 @@
 #include <iostream>
 using namespace std;
 int main(){
+	string mes[13]={ "nulo","enero", "febrero","marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
 	float montomen[100];
 	int s=0;
 	int c;
@@ -64,7 +65,6 @@ int main(){
 			cout<<psregular<<"%";
 			cout<<" "<<endl;
 			cout<<"Porcentaje de las ventas excelentes: "<<endl;
-			cout<<" "<<endl;
 			for(int j=1; j<=12; j++){
 				if((promedio*0.75)<montomen[j]){
 					sexcelente= sexcelente+montomen[j];
@@ -74,6 +74,13 @@ int main(){
 			cout<<psexcelente<<"%";
 			break;
 		case 3: 
-			cout<<"Nombres de los meses en los cuales las ventas fueron excelentes. ";
+			cout<<"Nombres de los meses en los cuales las ventas fueron excelentes. "<<endl;
+			for(int j=1; j<=12; j++){
+				if((promedio*0.75)<montomen[j]){
+					sexcelente= sexcelente+montomen[j];
+				cout<<" - "<<mes[j]<<endl;
+				}
+			}
+			
 	}
 }
